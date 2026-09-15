@@ -1,0 +1,6 @@
+{
+  "name": "SIGEC - Gerenciamento de Estoque da Cozinha",
+  "description": "Sistema de Gerenciamento de Estoque da Cozinha (SIGEC) para gerência e administração de almoxarifado, turmas, instrutores chefs, requisições e expedição.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

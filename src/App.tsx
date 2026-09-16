@@ -10,13 +10,11 @@ import { ClassesView } from './components/views/ClassesView';
 import { RequisitionsView } from './components/views/RequisitionsView';
 import { DispatchHistoryView } from './components/views/DispatchHistoryView';
 import { DirectDispatchModal } from './components/modals/DirectDispatchModal';
-import { Wifi, Battery, Signal } from 'lucide-react';
 
 const MainAppContent: React.FC = () => {
   const { classes, instructors } = useApp();
 
   const [activeTab, setActiveTab] = useState<ActiveTab>('estoque');
-  const [isMobileFrame, setIsMobileFrame] = useState<boolean>(false);
   const [openCreateInstructorModal, setOpenCreateInstructorModal] = useState<boolean>(false);
 
   // Direct dispatch modal
@@ -44,30 +42,10 @@ const MainAppContent: React.FC = () => {
     <div className="min-h-screen bg-[#fbf8ff] text-[#002747] flex flex-col items-center">
       <ToastContainer />
 
-      {/* Outer Shell Wrapper (allows switching between realistic mobile frame and full width) */}
-      <div
-        className={`w-full transition-all duration-300 ${
-          isMobileFrame
-            ? 'max-w-md my-4 sm:my-8 bg-[#fbf8ff] rounded-3xl shadow-2xl overflow-hidden border-8 border-[#002747]'
-            : 'max-w-5xl min-h-screen bg-[#fbf8ff] flex flex-col'
-        }`}
-      >
-        {/* Simulated Mobile Status Bar if frame active */}
-        {isMobileFrame && (
-          <div className="bg-[#002747] text-white px-5 py-2 flex items-center justify-between text-[11px] font-medium select-none border-b border-[#00192e]">
-            <span className="font-semibold">09:41</span>
-            <div className="flex items-center space-x-1.5 text-slate-200">
-              <Signal className="w-3 h-3" />
-              <Wifi className="w-3 h-3" />
-              <Battery className="w-4 h-4" />
-            </div>
-          </div>
-        )}
-
+      {/* Main Container Wrapper - Optimized for Mobile View */}
+      <div className="w-full min-h-screen bg-[#fbf8ff] flex flex-col overflow-x-hidden">
         {/* Application Header */}
         <Header
-          isMobileFrame={isMobileFrame}
-          setIsMobileFrame={setIsMobileFrame}
           onOpenRequisitions={() => setActiveTab('requisicoes')}
           onOpenInstructors={() => setActiveTab('instrutores')}
           onOpenCreateInstructor={() => {

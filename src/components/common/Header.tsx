@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   UtensilsCrossed,
-  Smartphone,
-  Monitor,
   RotateCcw,
   AlertTriangle,
   ClipboardCheck,
@@ -11,16 +9,12 @@ import {
 import { useApp } from '../../context/AppContext';
 
 interface HeaderProps {
-  isMobileFrame: boolean;
-  setIsMobileFrame: (val: boolean) => void;
   onOpenRequisitions: () => void;
   onOpenInstructors?: () => void;
   onOpenCreateInstructor?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  isMobileFrame,
-  setIsMobileFrame,
   onOpenRequisitions,
   onOpenInstructors,
   onOpenCreateInstructor,
@@ -89,19 +83,6 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <ClipboardCheck className="w-3.5 h-3.5 text-white" />
             <span>{pendingCount > 0 ? `${pendingCount} Req. Pendentes` : 'Requisições'}</span>
-          </button>
-
-          {/* Frame switch (Mobile shell vs Fluid desktop) */}
-          <button
-            onClick={() => setIsMobileFrame(!isMobileFrame)}
-            title={isMobileFrame ? 'Expandir para Tela Cheia' : 'Simular Moldura Mobile'}
-            className="p-2 rounded-xl bg-[#003660] hover:bg-[#004277] text-blue-100 transition-colors border border-blue-400/20 flex items-center justify-center text-xs"
-          >
-            {isMobileFrame ? (
-              <Monitor className="w-4 h-4" />
-            ) : (
-              <Smartphone className="w-4 h-4 text-[#ff8928]" />
-            )}
           </button>
 
           {/* Reset button */}

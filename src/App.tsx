@@ -9,7 +9,6 @@ import { InstructorsView } from './components/views/InstructorsView';
 import { ClassesView } from './components/views/ClassesView';
 import { RequisitionsView } from './components/views/RequisitionsView';
 import { DispatchHistoryView } from './components/views/DispatchHistoryView';
-import { ProcurementReportView } from './components/views/ProcurementReportView';
 import { DirectDispatchModal } from './components/modals/DirectDispatchModal';
 import { Wifi, Battery, Signal } from 'lucide-react';
 
@@ -75,7 +74,6 @@ const MainAppContent: React.FC = () => {
             setActiveTab('instrutores');
             setOpenCreateInstructorModal(true);
           }}
-          onOpenProcurement={() => setActiveTab('compras')}
         />
 
         {/* Main Content Area */}
@@ -107,8 +105,6 @@ const MainAppContent: React.FC = () => {
               onOpenDirectDispatch={() => handleOpenDirectDispatch()}
             />
           )}
-
-          {activeTab === 'compras' && <ProcurementReportView />}
 
           {activeTab === 'historico' && <DispatchHistoryView />}
         </main>

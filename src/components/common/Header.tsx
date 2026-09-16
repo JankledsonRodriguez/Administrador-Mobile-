@@ -7,8 +7,6 @@ import {
   AlertTriangle,
   ClipboardCheck,
   UserPlus,
-  ShieldCheck,
-  ShoppingCart,
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 
@@ -18,7 +16,6 @@ interface HeaderProps {
   onOpenRequisitions: () => void;
   onOpenInstructors?: () => void;
   onOpenCreateInstructor?: () => void;
-  onOpenProcurement?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -27,7 +24,6 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenRequisitions,
   onOpenInstructors,
   onOpenCreateInstructor,
-  onOpenProcurement,
 }) => {
   const { requisitions, stockItems, resetToDefaults } = useApp();
 
@@ -57,19 +53,6 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Quick Header Actions */}
         <div className="flex items-center space-x-2">
-          {/* Quick Procurement Report Button */}
-          {onOpenProcurement && (
-            <button
-              id="header-btn-compras"
-              onClick={onOpenProcurement}
-              title="Planejamento e Relatório de Compras"
-              className="hidden lg:flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-[#003660] hover:bg-[#004277] text-blue-100 border border-blue-400/20 text-xs font-bold transition-all shadow-xs"
-            >
-              <ShoppingCart className="w-3.5 h-3.5 text-[#ff8928]" />
-              <span>Relatório de Compras</span>
-            </button>
-          )}
-
           {/* Quick Add Instructor Button for Manager */}
           {onOpenCreateInstructor && (
             <button

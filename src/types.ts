@@ -257,5 +257,5 @@ export interface ProcurementReportItem {
   }[];
 }
 
-export type ActiveTab = 'estoque' | 'instrutores' | 'turmas' | 'requisicoes' | 'historico' | 'compras';
+export type ActiveTab = 'estoque' | 'instrutores' | 'turmas' | 'requisicoes' | 'historico';
 

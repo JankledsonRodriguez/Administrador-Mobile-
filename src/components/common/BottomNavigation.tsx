@@ -1,5 +1,5 @@
 import React from 'react';
-import { Package, UserCheck, Users, ClipboardCheck, History, ShoppingCart } from 'lucide-react';
+import { Package, UserCheck, Users, ClipboardCheck, History } from 'lucide-react';
 import { ActiveTab } from '../../types';
 import { useApp } from '../../context/AppContext';
 
@@ -20,7 +20,6 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
     { id: 'instrutores', label: 'Instrutores', icon: UserCheck },
     { id: 'turmas', label: 'Turmas', icon: Users },
     { id: 'requisicoes', label: 'Requisições', icon: ClipboardCheck, badge: pendingCount },
-    { id: 'compras', label: 'Compras', icon: ShoppingCart },
     { id: 'historico', label: 'Histórico', icon: History },
   ];
 

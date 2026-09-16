@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SIGEC" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/sigec_navy</item>
+        <item name="colorPrimaryDark">@color/sigec_navy_dark</item>
+        <item name="colorAccent">@color/sigec_orange</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/sigec_navy_dark</item>
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/sigec_bg</item>
+    </style>
+</resources>

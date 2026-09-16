@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sigec_navy">#002747</color>
+    <color name="sigec_navy_dark">#00192e</color>
+    <color name="sigec_navy_light">#003660</color>
+    <color name="sigec_orange">#ff8928</color>
+    <color name="sigec_orange_hover">#eb7717</color>
+    <color name="sigec_orange_light">#fff3ea</color>
+    <color name="sigec_bg">#f4f6f9</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="status_green">#10B981</color>
+    <color name="status_orange">#F97316</color>
+    <color name="status_gray">#64748B</color>
+    <color name="colorPrimary">#002747</color>
+    <color name="colorPrimaryDark">#00192e</color>
+    <color name="colorAccent">#ff8928</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F1F5F9</color>
+    <color name="gray_text">#64748B</color>
+</resources>

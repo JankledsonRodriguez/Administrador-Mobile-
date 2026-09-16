@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { AppProvider, useApp } from './context/AppContext';
 import { ActiveTab } from './types';
-import { Header } from './components/Header';
-import { BottomNavigation } from './components/BottomNavigation';
-import { ToastContainer } from './components/ToastContainer';
-import { StockView } from './components/StockView';
-import { InstructorsView } from './components/InstructorsView';
-import { ClassesView } from './components/ClassesView';
-import { RequisitionsView } from './components/RequisitionsView';
-import { DispatchHistoryView } from './components/DispatchHistoryView';
-import { ProcurementReportView } from './components/ProcurementReportView';
-import { DirectDispatchModal } from './components/DirectDispatchModal';
+import { Header } from './components/common/Header';
+import { BottomNavigation } from './components/common/BottomNavigation';
+import { ToastContainer } from './components/common/ToastContainer';
+import { StockView } from './components/views/StockView';
+import { InstructorsView } from './components/views/InstructorsView';
+import { ClassesView } from './components/views/ClassesView';
+import { RequisitionsView } from './components/views/RequisitionsView';
+import { DispatchHistoryView } from './components/views/DispatchHistoryView';
+import { ProcurementReportView } from './components/views/ProcurementReportView';
+import { DirectDispatchModal } from './components/modals/DirectDispatchModal';
 import { Wifi, Battery, Signal } from 'lucide-react';
 
 const MainAppContent: React.FC = () => {

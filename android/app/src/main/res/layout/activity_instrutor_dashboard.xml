@@ -374,17 +374,28 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentBottom="true"
-        android:background="#0B111A"
+        android:background="@color/sigec_navy"
         android:gravity="center"
         android:orientation="horizontal"
+        android:elevation="8dp"
         android:paddingTop="4dp">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/sigec_orange"
+            android:background="@android:color/transparent"
             android:text="🏠 Início"
+            android:textColor="@color/sigec_orange"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="📅 Calendário"
             android:textColor="@color/white"
             android:textSize="12sp" />
 
@@ -392,18 +403,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#0B111A"
-            android:text="📅 Calendário"
-            android:textColor="#94A3B8"
-            android:textSize="12sp" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#0B111A"
+            android:background="@android:color/transparent"
             android:text="📖 Livro"
-            android:textColor="#94A3B8"
+            android:textColor="@color/white"
             android:textSize="12sp" />
     </LinearLayout>
 

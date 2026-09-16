@@ -28,7 +28,11 @@
             android:exported="true" />
 
         <activity
-            android:name="com.example.gestaoestoque.instrutor.InstrutorDashboardActivity"
+            android:name="com.example.gestaoestoque.admin.EstoqueActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.gestaoestoque.admin.TurmaActivity"
             android:exported="true" />
 
         <provider

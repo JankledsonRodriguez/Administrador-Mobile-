@@ -24,7 +24,7 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-lg px-2 py-1 max-w-7xl mx-auto sm:static sm:border-t-0 sm:shadow-none sm:py-2 sm:px-4 sm:bg-transparent">
+    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-[#002747] border-t border-[#00192e] shadow-lg px-2 py-1 max-w-7xl mx-auto sm:static sm:border-t-0 sm:shadow-none sm:py-2 sm:px-4">
       <div className="flex items-center justify-around sm:justify-center sm:gap-2">
         {tabs.map((tab) => {
           const Icon = tab.icon;
@@ -34,16 +34,16 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`relative flex flex-col sm:flex-row items-center justify-center py-2 px-2 sm:px-4 sm:py-2 rounded-xl font-medium transition-all duration-200 ${
+              className={`relative flex flex-col sm:flex-row items-center justify-center py-2 px-3 sm:px-4 sm:py-2 rounded-xl font-medium transition-all duration-200 ${
                 isActive
-                  ? 'text-[#002747] bg-slate-100 sm:bg-[#002747] sm:text-white shadow-xs font-bold'
-                  : 'text-slate-600 hover:text-[#002747] hover:bg-slate-100 sm:hover:bg-slate-200/60'
+                  ? 'text-[#ff8928] bg-[#00192e] shadow-xs font-bold'
+                  : 'text-white hover:text-[#ff8928] hover:bg-[#003660]/60'
               }`}
             >
               <div className="relative">
                 <Icon
                   className={`w-5 h-5 sm:w-4 sm:h-4 sm:mr-1.5 ${
-                    isActive ? 'text-[#ff8928] sm:text-white' : 'text-slate-500'
+                    isActive ? 'text-[#ff8928]' : 'text-white'
                   }`}
                 />
                 {Boolean(tab.badge && tab.badge > 0) && (
@@ -52,11 +52,11 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
                   </span>
                 )}
               </div>
-              <span className="text-[10.5px] sm:text-xs mt-0.5 sm:mt-0 tracking-tight">
+              <span className={`text-[10.5px] sm:text-xs mt-0.5 sm:mt-0 tracking-tight ${isActive ? 'text-[#ff8928]' : 'text-white'}`}>
                 {tab.label}
               </span>
               {isActive && (
-                <span className="sm:hidden absolute -bottom-1 w-6 h-1 rounded-full bg-[#ff8928]" />
+                <span className="absolute -bottom-1 w-6 h-1 rounded-full bg-[#ff8928]" />
               )}
             </button>
           );

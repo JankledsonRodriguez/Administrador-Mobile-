@@ -39,11 +39,11 @@ const MainAppContent: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#fbf8ff] text-[#002747] flex flex-col items-center">
+    <div className="min-h-screen sigec-app-bg text-[#002747] flex flex-col items-center">
       <ToastContainer />
 
       {/* Main Container Wrapper - Optimized for Mobile View */}
-      <div className="w-full min-h-screen bg-[#fbf8ff] flex flex-col overflow-x-hidden">
+      <div className="w-full min-h-screen flex flex-col overflow-x-hidden relative z-10">
         {/* Application Header */}
         <Header
           onOpenRequisitions={() => setActiveTab('requisicoes')}

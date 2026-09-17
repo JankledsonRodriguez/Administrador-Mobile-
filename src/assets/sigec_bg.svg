@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="100%" height="100%" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+  </defs>
+  <!-- Fundo claro superior -->
+  <rect width="1440" height="900" fill="url(#bgGrad)" />
+
+  {/* Linhas diagonais sutis de textura */}
+  <g opacity="0.03" stroke="#002747" stroke-width="2">
+    <line x1="100" y1="0" x2="0" y2="100" />
+    <line x1="300" y1="0" x2="200" y2="100" />
+    <line x1="500" y1="0" x2="400" y2="100" />
+    <line x1="700" y1="0" x2="600" y2="100" />
+    <line x1="900" y1="0" x2="800" y2="100" />
+    <line x1="1100" y1="0" x2="1000" y2="100" />
+    <line x1="1300" y1="0" x2="1200" y2="100" />
+
+    <line x1="200" y1="100" x2="100" y2="200" />
+    <line x1="400" y1="100" x2="300" y2="200" />
+    <line x1="600" y1="100" x2="500" y2="200" />
+    <line x1="800" y1="100" x2="700" y2="200" />
+    <line x1="1000" y1="100" x2="900" y2="200" />
+    <line x1="1200" y1="100" x2="1100" y2="200" />
+    <line x1="1400" y1="100" x2="1300" y2="200" />
+  </g>
+
+  <!-- Linha de destaque Laranja na curva -->
+  <path d="M0,650 C400,780 1000,550 1440,700 L1440,900 L0,900 Z" fill="#ff8928" />
+
+  <!-- Onda inferior Azul Marinho -->
+  <path d="M0,670 C400,800 1000,570 1440,720 L1440,900 L0,900 Z" fill="#002747" />
+</svg>

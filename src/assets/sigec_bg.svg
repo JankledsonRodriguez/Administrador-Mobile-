@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="100%" height="100%" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <pattern id="diagonalPattern" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
+      <line x1="0" y1="0" x2="0" y2="60" stroke="#e2e8f0" stroke-width="3" opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Fundo claro superior com textura -->
+  <rect width="1440" height="900" fill="url(#bgGrad)" />
+  <rect width="1440" height="900" fill="url(#diagonalPattern)" />
+
+  <!-- Linha de destaque Laranja na curva -->
+  <path d="M0,640 C400,770 1000,540 1440,690 L1440,900 L0,900 Z" fill="#ff8928" />
+
+  <!-- Onda inferior Azul Marinho -->
+  <path d="M0,660 C400,790 1000,560 1440,710 L1440,900 L0,900 Z" fill="#002747" />
+</svg>

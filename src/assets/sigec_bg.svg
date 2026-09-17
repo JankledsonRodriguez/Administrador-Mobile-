@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" width="100%" height="100%" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1100" width="100%" height="100%" preserveAspectRatio="none">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#f8fafc" />
@@ -10,12 +10,12 @@
   </defs>
 
   <!-- Fundo claro superior com textura -->
-  <rect width="1440" height="1000" fill="url(#bgGrad)" />
-  <rect width="1440" height="1000" fill="url(#diagonalPattern)" />
+  <rect width="1440" height="1100" fill="url(#bgGrad)" />
+  <rect width="1440" height="1100" fill="url(#diagonalPattern)" />
 
   <!-- Linha de destaque Laranja na curva -->
-  <path d="M0,780 C400,880 1000,680 1440,810 L1440,1000 L0,1000 Z" fill="#ff8928" />
+  <path d="M0,880 C400,980 1000,780 1440,910 L1440,1100 L0,1100 Z" fill="#ff8928" />
 
   <!-- Onda inferior Azul Marinho -->
-  <path d="M0,800 C400,900 1000,700 1440,830 L1440,1000 L0,1000 Z" fill="#002747" />
+  <path d="M0,900 C400,1000 1000,800 1440,930 L1440,1100 L0,1100 Z" fill="#002747" />
 </svg>

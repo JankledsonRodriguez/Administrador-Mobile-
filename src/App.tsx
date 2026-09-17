@@ -4,6 +4,7 @@ import { ActiveTab } from './types';
 import { Header } from './components/common/Header';
 import { BottomNavigation } from './components/common/BottomNavigation';
 import { ToastContainer } from './components/common/ToastContainer';
+import { Footer } from './components/common/Footer';
 import { StockView } from './components/views/StockView';
 import { InstructorsView } from './components/views/InstructorsView';
 import { ClassesView } from './components/views/ClassesView';
@@ -39,11 +40,11 @@ const MainAppContent: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen sigec-app-bg text-[#002747] flex flex-col items-center">
+    <div className="min-h-screen bg-[#fbf8ff] text-[#002747] flex flex-col items-center">
       <ToastContainer />
 
       {/* Main Container Wrapper - Optimized for Mobile View */}
-      <div className="w-full min-h-screen flex flex-col overflow-x-hidden relative z-10">
+      <div className="w-full min-h-screen bg-[#fbf8ff] flex flex-col overflow-x-hidden">
         {/* Application Header */}
         <Header
           onOpenRequisitions={() => setActiveTab('requisicoes')}
@@ -55,7 +56,7 @@ const MainAppContent: React.FC = () => {
         />
 
         {/* Main Content Area */}
-        <main className="flex-1 p-3 sm:p-5 overflow-y-auto">
+        <main className="flex-1 p-3 sm:p-5 overflow-y-auto pb-20">
           {activeTab === 'estoque' && (
             <StockView onOpenDirectDispatch={() => handleOpenDirectDispatch()} />
           )}
@@ -86,6 +87,9 @@ const MainAppContent: React.FC = () => {
 
           {activeTab === 'historico' && <DispatchHistoryView />}
         </main>
+
+        {/* Footer with Corporate Wave */}
+        <Footer />
 
         {/* Bottom Navigation */}
         <BottomNavigation activeTab={activeTab} setActiveTab={setActiveTab} />

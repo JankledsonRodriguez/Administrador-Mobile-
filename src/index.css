@@ -5,22 +5,10 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f8fafc;
+    background-color: #fbf8ff;
     color: #002747;
     -webkit-tap-highlight-color: transparent;
-    margin: 0;
-    padding: 0;
   }
-}
-
-/* Custom SIGEC Corporate Background Image - Scrolls naturally to show at the bottom */
-.sigec-app-bg {
-  background-image: url('./assets/sigec_bg.svg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  min-height: 100vh;
-  position: relative;
 }
 
 /* Custom scrollbar for mobile lists */

@@ -13,12 +13,12 @@
   }
 }
 
-/* Custom SIGEC Corporate Background Image */
+/* Custom SIGEC Corporate Background Image - Scrolls naturally to show at the bottom */
 .sigec-app-bg {
   background-image: url('./assets/sigec_bg.svg');
-  background-size: cover;
-  background-position: bottom center;
-  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
   min-height: 100vh;
   position: relative;
 }

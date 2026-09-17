@@ -55,7 +55,7 @@ const MainAppContent: React.FC = () => {
         />
 
         {/* Main Content Area */}
-        <main className="flex-1 p-3 sm:p-5 overflow-y-auto">
+        <main className="flex-1 p-3 sm:p-5 overflow-y-auto pb-24">
           {activeTab === 'estoque' && (
             <StockView onOpenDirectDispatch={() => handleOpenDirectDispatch()} />
           )}

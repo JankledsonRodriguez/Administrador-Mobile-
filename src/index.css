@@ -17,7 +17,7 @@
 .sigec-app-bg {
   background-image: url('./assets/sigec_bg.svg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   background-attachment: fixed;
   min-height: 100vh;
   position: relative;
